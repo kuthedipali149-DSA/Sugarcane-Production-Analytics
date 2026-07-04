@@ -1,246 +1,156 @@
-# 🌾 Sugarcane Production Analytics – Season 14
+# 🌾 Sugarcane Production Analytics
 
-## 📌 Project Overview
+## Project Overview
 
-This project analyzes sugarcane weighbridge transaction data collected during Season 14. The objective is to identify production trends, operational performance, geographical patterns, and key business insights that can help improve sugar factory operations.
+This project presents a comprehensive Exploratory Data Analysis (EDA) of a real-world sugarcane weighbridge dataset collected during an entire crushing season. The objective is to uncover production patterns, operational trends, and business insights that can support better decision-making in sugar factories.
 
-The project was developed using Python for data analysis and visualization.
-
----
-
-# 🎯 Objectives
-
-- Analyze seasonal sugarcane production.
-- Measure harvesting and transportation performance.
-- Study production across zones, villages, and talukas.
-- Identify production patterns and operational trends.
-- Detect data outliers and relationships between variables.
-- Build an Executive Dashboard for management reporting.
+The analysis was performed using Python and focuses on identifying factors affecting sugarcane production, transportation efficiency, plantation characteristics, and weighbridge operations.
 
 ---
 
-# 📂 Dataset
+## Business Objectives
 
-The dataset contains **40,480 sugarcane transactions** with **248 columns**.
+The project aims to:
 
-Major attributes include:
-
-- Net Weight
-- Gross Weight
-- Empty Weight
-- Cultivator
-- Harvester
-- Transporter
-- Vehicle
-- Village
-- Taluka
-- Zone
-- Plantation Area
-- Cane Variety
-- Cane Quality
-- Shift Information
-- Distance Range
-- Dates
+* Analyze overall sugarcane production.
+* Study daily and monthly production trends.
+* Identify top-performing zones, villages, talukas, and cultivators.
+* Analyze plantation characteristics and cane quality.
+* Evaluate operational efficiency through shift-wise analysis.
+* Discover relationships between production variables using correlation analysis.
+* Generate actionable business insights and recommendations.
 
 ---
 
-# 🛠 Technologies Used
+## Dataset Information
 
-- Python 3.x
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+* **Industry:** Sugar Manufacturing
+* **Domain:** Agriculture Analytics
+* **Records after Cleaning:** 40,480
+* **Features:** 248
+* **Data Type:** Weighbridge Transaction Data
 
----
+The dataset contains information related to:
 
-# 📊 Analyses Performed
-
-## 1. Season KPI Overview
-
-- Total Transactions
-- Total Production
-- Average Net Weight
-- Total Gross Weight
-- Total Empty Weight
-- Unique Cultivators
-- Unique Harvesters
-- Unique Transporters
-- Unique Vehicles
+* Sugarcane deliveries
+* Cultivator details
+* Plantation information
+* Transportation
+* Cane quality
+* Shift operations
+* Geographic information
+* Production measurements
 
 ---
 
-## 2. Monthly Production Analysis
+## Technologies Used
 
-- Monthly production trend
-- Seasonal production comparison
-
----
-
-## 3. Daily Production Analysis
-
-- Daily production variation
-
----
-
-## 4. Shift-wise Production Analysis
-
-- Production by operational shift
-- Average production per shift
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* OpenPyXL
+* VS Code
+* Git
+* GitHub
 
 ---
 
-## 5. Harvester Analysis
+## Exploratory Data Analysis
 
-- Top harvesters by production
-- Production contribution
+The project includes a complete business-oriented EDA covering:
 
----
+* Season KPI Overview
+* Monthly Production Trend
+* Daily Production Trend
+* Weekly Production Trend
+* Top Producing Zones
+* Village-wise Production
+* Taluka-wise Production
+* Plantation Area Analysis
+* Cane Type Analysis
+* Cane Quality Analysis
+* Shift-wise Production
+* Correlation Heatmap
+* Top Correlated Features
+* Missing Value Analysis
+* Duplicate Analysis
+* Distribution Analysis
+* Business KPI Summary
 
-## 6. Transporter Analysis
 
-- Top transporters by production
+## 📊 Key Visualizations
 
----
+### Season KPI Overview
 
-## 7. Cultivator Analysis
-
-- Top cultivators by production
-
----
-
-## 8. Cane Quality Analysis
-
-- Production by cane quality
-
----
-
-## 9. Cane Variety Analysis
-
-- Production by cane variety
-
----
-
-## 10. Plantation Area Analysis
-
-- Production by plantation size
-- Plantation size distribution
+![Season KPI](Images/01_KPI.png)
 
 ---
 
-## 11. Zone Analysis
+### Monthly Production Trend
 
-- Zone-wise production
-- Average production
-- Total trips
+![Monthly Trend](Images/02_Monthly_Trend.png)
 
 ---
 
-## 12. Taluka Analysis
+### Top Cane Varieties
 
-- Taluka-wise production
-
----
-
-## 13. Village Analysis
-
-- Village-wise production
+![Top Cane Varieties](Images/03_Top_Cane_Varieties.png)
 
 ---
 
-## 14. Distance Range Analysis
+### Cane Type Production
 
-- Production across transport distance ranges
+![Cane Type Production](Images/04_Top_Cane_Type_Production.png)
+---
+
+## Key Deliverables
+
+This repository contains:
+
+* Complete data cleaning workflow
+* Exploratory Data Analysis
+* Business Insights
+* Business Recommendations
+* Well-organized visualizations
+* Professional documentation
 
 ---
 
-## 15. Correlation Analysis
+## Folder Structure
 
-- Feature correlation heatmap
-- Top correlations with Net Weight
-
----
-
-## 16. Outlier Detection
-
-- Identification of abnormal production records
-
----
-
-## 17. Executive Dashboard
-
-Management summary including:
-
-- Overall KPIs
-- Best performing zone
-- Top harvester
-- Top cultivator
-- Most productive shift
-- Best plantation area
-
----
-
-# 📈 Key Findings
-
-- Over **444,000 tons** of sugarcane were analyzed.
-- Factory Zone contributed the highest production.
-- Production was concentrated within medium plantation sizes.
-- Harvester performance varied significantly.
-- Production differed across operational shifts.
-- Transport distance influenced production patterns.
-- A few cultivators contributed a major share of seasonal production.
-- Outliers were detected and identified for further validation.
-
----
-
-# 💼 Business Recommendations
-
-- Allocate additional harvesting resources to high-producing zones.
-- Monitor low-performing regions for operational improvements.
-- Review unusually high-weight transactions.
-- Encourage cultivation practices associated with higher production.
-- Use dashboard reporting for continuous seasonal monitoring.
-
----
-
-# 📁 Project Structure
-
-```
-Analytics_Season_14
+```text
+Sugarcane-Production-Analytics
 │
+├── Charts/
+├── Dataset/
 ├── analysis.py
-├── README.md
 ├── Analysis_Notes.md
 ├── Business_Insights.md
 ├── Business_Recommendations.md
+├── README.md
 ├── requirements.txt
-│
-├── Dataset
-│
-├── Charts
-│   ├── 01_Season_KPI_Overview.png
-│   ├── 02_Monthly_Production.png
-│   ├── 03_Daily_Production.png
-│   ├── 04_Shift_Wise_Production.png
-│   ├── ...
-│
-└── Report
+└── .gitignore
 ```
 
 ---
 
-# ▶️ How to Run
+## How to Run
 
-1. Clone or download the project.
-2. Install the required packages:
+Clone the repository:
+
+```bash
+git clone https://github.com/kuthedipali149-DSA/Sugarcane-Production-Analytics.git
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Place the dataset inside the project folder.
-
-4. Run:
+Run the analysis:
 
 ```bash
 python analysis.py
@@ -248,10 +158,32 @@ python analysis.py
 
 ---
 
-# 👨‍💻 Author
+## Business Documents
+
+This repository also includes:
+
+* **Business_Insights.md** — Key findings from the analysis.
+* **Business_Recommendations.md** — Actionable recommendations based on the findings.
+
+---
+
+## Future Improvements
+
+Possible extensions of this project include:
+
+* Interactive Power BI Dashboard
+* Tableau Dashboard
+* Machine Learning-based Production Forecasting
+* Streamlit Dashboard
+* Automated PDF Reporting
+* Geographic (GIS) Production Mapping
+
+---
+
+## Author
 
 **Dipali Kuthe**
 
-Data Analytics & Machine Learning Project
+Data Analytics Portfolio Project
 
-Season 14 Sugarcane Production Analysis
+Focused on applying data analytics to solve real-world agricultural and manufacturing business problems.
